@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ethereum-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8545:8545'  # Expose JSON-RPC API on host port 8545
+    # Add other configuration options as needed
